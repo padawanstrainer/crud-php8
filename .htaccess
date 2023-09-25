@@ -1,0 +1,9 @@
+RewriteEngine On
+
+#RewriteRule ^([a-z]+)(/(new)|(/(\d+)(/(edit|delete))?))?$ index.php?cat=$1&id=$5&a=$7&n=$3
+
+
+RewriteRule ^([a-z]+)$ index.php?cat=$1
+RewriteRule ^([a-z]+)/(new)$ index.php?cat=$1&a=$2
+RewriteRule ^([a-z]+)/(\d+)$ index.php?cat=$1&id=$2&a=details
+RewriteRule ^([a-z]+)/(\d+)/(edit|delete)$ index.php?cat=$1&id=$2&a=$3

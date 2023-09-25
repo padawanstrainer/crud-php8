@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema académico</title>
+  <link rel="stylesheet" href="/assets/css/estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>Instituto Castoreum</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <span>Materias</span>
+          <ul>
+            <li><a href='#'>Ed Fisica</a></li>
+            <li><a href='#'>Contabilidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <span>Pirulo</span>
+          <ul>
+            <li><a href='#'>Perfil</a></li>
+            <li><a href='#'>Salir</a></li>    
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class='details'>
+    <h2>Notas de ALUMNO en MATERIA</h2>
+
+    <div>
+      <p>Profesor a cargo PROFESOR</p>
+      <ul>
+        <li class='approved'>Parcial 1: XX</li> 
+        <li class='approved'>Parcial 2: XX</li> 
+        <li class='rejected'>Parcial 3: XX</li> 
+        <li class='pending'>Parcial 4: --</li> 
+      </ul>
+
+      <div class='average approved'>Promedio final: 9.99</div>
+    </div>
+    <div>
+      <iframe src="/pdfs/certificado.pdf"></iframe>
+      <a href="javascript:void(0)" class='download'>Bajar PDF</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema académico</title>
+  <link rel="stylesheet" href="/assets/css/estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>Instituto Castoreum</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <span>Materias</span>
+          <ul>
+            <li><a href='#'>Ed Fisica</a></li>
+            <li><a href='#'>Contabilidad</a></li>
+          </ul>
+        </li>
+        <li>
+          <span>Pirulo</span>
+          <ul>
+            <li><a href='#'>Perfil</a></li>
+            <li><a href='#'>Salir</a></li>    
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form action="/listado.html" method="post">
+      <h2>Credenciales requeridas</h2>
+      <div>
+        <label for="user">Usuario</label>
+        <input type="text" name="user" id="user" autocomplete="off" required />
+      </div>
+      <div>
+        <label for="pwd">Contraseña</label>
+        <input type="password" name="pwd" id="pwd" required />
+      </div>
+      <div class='buttons'>
+        <button type="submit">Acceder</button>
+        <button type="button">Cancelar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

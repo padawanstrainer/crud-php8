@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300;400&family=Rosarivo&display=swap');
+
+body{
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background: #D3D3D3;
+}
+
+a{
+  text-decoration: none;
+  color: orange;
+}
+
+h1, h2, h3{
+  font-family: 'Anton', sans-serif;
+  font-weight: normal;
+}
+
+/* header */
+
+header{
+  background: #1A1B26;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 5vw;
+  color: white;
+}
+
+header h1{
+  font-family: 'Rosarivo', serif;
+  margin: 0;
+  line-height: 100%;
+}
+
+header nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav > ul{
+  display: flex;
+  gap: 4px;
+}
+
+header nav > ul li{
+  position: relative;
+}
+
+header nav > ul li span{
+  display: block;
+  text-align: center;
+  padding: .3lh 0;
+  border: 1px solid #313643;
+  width: 160px;
+}
+
+header nav > ul li ul{
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0;
+  transition: 0.3s;
+  transform: scale(1, 0);
+  transform-origin: center top;
+}
+
+header nav > ul li:hover ul{
+  transform: scale(1, 1);
+}
+
+header nav > ul li ul a{
+  display: block;
+  background: #313B55;
+  color: white;
+  padding: 5px 10px;
+  transition: border-left .15s ;
+}
+
+header nav > ul li ul a:hover{
+  background: #40506F;
+  border-left: 10px solid orange;
+}
+
+
+/* main */
+main{
+  margin: 0 5vw;
+  padding: 1.5rem 2vw;
+  background: #393B4B;
+  min-height: 70vh;
+  color: white;
+}
+
+
+/* forms */
+form > div{
+  margin-bottom: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+form > div label{
+  width: 100px;
+}
+
+form > div label + *{
+  width: 500px;
+  padding: .5em 1em;
+  border-radius: 6px;
+  border: 1px solid #272C40;
+  outline: none;
+}
+
+form .buttons button{
+  padding: .5rem 0;
+  width: 100px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+}
+
+form .buttons button:first-child{
+  margin-left: 105px;
+}
+
+form .buttons button[type=submit]{
+  background: #299DC1;
+}
+form .buttons button[type=button]{
+  background: #5F5F5F;
+}
+
+/* tablas */
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+table th{
+  background: #1A1B26;
+}
+
+table th,
+table td{
+  border: 1px solid #2C2E2E;
+  padding: 6px 15px;
+  text-align: center;
+}
+
+table th,
+table td:not( :first-child ){
+  white-space: nowrap;
+}
+
+table td:first-child{
+  text-align: left;
+  width: 100%;
+}
+
+table tr:nth-child(even) td{
+  background:#292934;
+}
+
+
+/* ver alumno */
+.details{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0 20px;
+}
+
+.details h2{
+  width: 100%;
+}
+
+.details > div{
+  flex: 1;
+}
+
+.details > div ul{
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.details > div ul li{
+  padding: .5em .25em;
+  border-bottom: 1px dashed #999;
+  margin-bottom: .2em;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.details > div ul li::before{
+  content: '';
+  height: .7em;
+  width:  .7em;
+  border-radius: 50%;
+}
+
+.details > div ul li.approved::before{
+  background: #67B748;
+}
+.details > div ul li.rejected::before{
+  background: #E58686;
+}
+.details > div ul li.pending::before{
+  background: #C9C9C9;
+}
+
+.details > div iframe{
+  width: 100%;
+  aspect-ratio: 16/9;
+  box-sizing: border-box;
+}
+
+.average{
+  padding: .5em;
+  text-align: center;
+  color: white;
+  border-radius: 6px;
+}
+
+.average.approved{
+  background: #0F580F;
+}
+
+.average.rejected{
+  background: #AD1717;
+}
+
+
+.download{
+  display: block;
+  padding: .5em 0;
+  text-align: center;
+  border-radius: 5px;
+  background: #2967AA;
+  color: white;
+}
+
+.download:hover{
+  filter: brightness(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
