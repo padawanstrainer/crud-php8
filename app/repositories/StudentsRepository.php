@@ -15,8 +15,8 @@ class StudentsRepository{
     $user = new UsersModel( );
     $resultados = $user->select( 'u.lastname, u.name, a.fkstudent, a.fkcourse, a.e1, a.e2, a.e3, a.e4', [
       'joins' => [
-        ['table' => 'asignature AS a', 'on' => 'a.fkstudent = u.id', 'type' => '' ],
-        ['table' => 'courses AS c', 'on' => 'c.id = a.fkcourse', 'type' => '' ]
+        ['table' => 'asignature AS a', 'on' => 'a.fkstudent = u.id'],
+        ['table' => 'courses AS c', 'on' => 'c.id = a.fkcourse']
       ],
       'where' => "c.fkteacher='$id_teacher'",
       'order' => 'u.lastname, u.name', 

@@ -1,8 +1,5 @@
 <?php 
 session_start( );
-$_SESSION['id'] = 2; /* simulamos a rodrigo - todo: login */
-$_SESSION['name'] = 'Rodrigo'; /* simulamos a rodrigo - todo: login */
-
 
 ini_set('display_errors', true);
 error_reporting(E_ALL);

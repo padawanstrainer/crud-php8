@@ -251,7 +251,13 @@ table tr:nth-child(even) td{
 
 
 
-
+.error_message{
+  padding: .5em 1em;
+  background: pink;
+  color: darkred;
+  margin: .5em 0 1em;
+  border-radius: .5em;
+}
 
 
 

@@ -3,6 +3,8 @@ $controllers = glob( APP. "/controllers/*.php" );
 $models = glob( APP. "/models/*.php" );
 $repos = glob( APP. "/repositories/*.php" );
 
-foreach($controllers as $c) require $c;
-foreach($models as $m) require $m;
-foreach($repos as $r) require $r;
+require APP . '/models/EntityModel.php';
+
+foreach($controllers as $c) require_once $c;
+foreach($models as $m) require_once $m;
+foreach($repos as $r) require_once $r;

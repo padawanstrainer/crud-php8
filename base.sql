@@ -9,7 +9,7 @@ CREATE TABLE users(
   lastname varchar(200) not null,
   user varchar(200),
   pass char(40),
-  rol enum('student','teacher','admin') default 'student'
+  rol enum('student','teacher','admin') default 'student' 
 ) ENGINE=innoDB;
 
 
@@ -24,7 +24,7 @@ CREATE TABLE courses(
   fksubject smallint unsigned not null, 
   fkteacher bigint unsigned not null,
 
-  constraint course_subject foreign key(fksubject) references subjects(id) on delete restrict on update cascade,
+  constraint course_subject foreign key(fksubject) references subjects(id) on delete cascade on update cascade,
   constraint course_teacher foreign key(fkteacher) references users(id) on delete cascade on update cascade
 ) ENGINE=innoDB;
 

@@ -19,6 +19,10 @@ return function( ){
     ];
   }
 
+  if( ! is_null($id) ){
+    return $controller::$action( $id );
+  }
+
   return $controller::$action( );
 
 };

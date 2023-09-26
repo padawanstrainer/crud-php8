@@ -1,6 +1,7 @@
 <?php 
 namespace app\models;
 
-class CoursesModel{
-  
+class CoursesModel extends EntityModel{
+    protected $tabla = 'courses';
+    protected $alias = 'c';
 }
